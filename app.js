@@ -12,12 +12,11 @@ app.set("views", "./views");
 
 // Create a socket
 io.on("connection", (socket) => {
-  console.log("A random user connected!");
 
   // User send a message
   socket.on("message", (message) => {
     io.emit("message", message);
-  });
+  }); 
 
   // User disconnects
   socket.on("disconnect", () => {
@@ -27,6 +26,10 @@ io.on("connection", (socket) => {
 
 // Render the index view
 app.get("/", (req, res) => {
+  res.render("form");
+});
+
+app.get("/index", (req, res) => {
   res.render("index");
 });
 
