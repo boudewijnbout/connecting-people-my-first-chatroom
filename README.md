@@ -1,5 +1,7 @@
 # Chippr.dev Chatroom
 
+<img src="https://github.com/boudewijnbout/connecting-people-my-first-chatroom/blob/main/public/images/Schermafbeelding%202022-05-27%20om%2015.29.50.png" />
+
 Dit project omvat een basis chatapplicatie waarin een gebruiker met andere gebruikers kan chatten. Deze chat is realtime gebouwd, dit houd in dat alle berichten direct aan de gebruikers worden getoond. Gebruikers kunnen elkaar herkennen door het gebruik van een nickname.
 
 ## 📚 Inhoudsopgave
