@@ -1,3 +1,4 @@
+// Elements
 let socket = io();
 let message = document.querySelector('li');
 let messages = document.querySelector('section ul');
@@ -6,36 +7,51 @@ let form = document.querySelector('form');
 let userName = prompt('Kies een gebruikersnaam:');
 
 // Logics
-form.addEventListener('submit', sendMessage);
-
-/**
- * Submit create project form with form data to API.
- *
- * @function sendMessage
- * @param {e} event Submit event of the form.
- */
- function sendMessage(e) {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    if (input.value) {
-        socket.emit('message', input.value);
-        input.value = '';
-    }
-}
 
-appendMessage(`You joined as: ${userName}`);
+    let messageValue = input.value;
+    sendMessage(`Ik: ${messageValue}`);
+    socket.emit('send-message', messageValue);
+    input.value = '';
+});
 
+sendMessage(`Chat binnengekomen als: ${userName}`);
+
+// Socket Functions
 socket.emit('new-user', userName);
 
 socket.on('user-connected', (userName) => {
-    appendMessage(`${userName} has connected.`);
+    sendMessage(`${userName} is de chat binnengekomen`);
+});
+
+socket.on('chat-message', (data) => {
+    receivedMessage(`${data.name}: ${data.messageValue}`);
 })
 
-function appendMessage(message) {;
-    messages.innerText = message;
-    // messages.append(message);
+// Functions
+/**
+ * Send a message into the chat
+ *
+ * @function sendMessage
+ * @param {message} string Message that has been send
+ */
+function sendMessage(message) {
+    let messageEl = document.createElement('li');
+    messageEl.classList.add('message-sent');
+    messageEl.innerText = message;
+    messages.append(messageEl);
 }
 
-socket.on('message', message => {
-    messages.appendChild(Object.assign(document.createElement('li'), { textContent: message }));
-});
+/**
+ * Receives a message into the chat
+ *
+ * @function receivedMessage
+ * @param {message} string Message that has been received
+ */
+function receivedMessage(message) {
+    let receivedMessageEl = document.createElement('li');
+    receivedMessageEl.classList.add('message-received');
+    receivedMessageEl.innerText = message;
+    messages.append(receivedMessageEl);
+}

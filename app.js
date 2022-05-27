@@ -15,15 +15,18 @@ app.set("views", "./views");
 io.on("connection", (socket) => {
 
   // User send a message
-  socket.on("message", (message) => {
-    io.emit("message", message);
+  socket.on("send-message", (messageValue) => {
+    socket.broadcast.emit("chat-message", {
+        messageValue: messageValue,
+        name: users[socket.id],
+    });
   }); 
    
   // User connects
   socket.on("new-user", (userName) => {
     users[socket.id] = userName;
     socket.broadcast.emit("user-connected", userName);
-  })
+  });
 
   // User disconnects
   socket.on("disconnect", () => {
