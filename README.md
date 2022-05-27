@@ -1,9 +1,8 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Chippr.dev Chatroom
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Dit project omvat een basis chatapplicatie waarin een gebruiker met andere gebruikers kan chatten. Deze chat is realtime gebouwd, dit houd in dat alle berichten direct aan de gebruikers worden getoond. Gebruikers kunnen elkaar herkennen door het gebruik van een nickname.
 
-## Inhoudsopgave
+## 📚 Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
@@ -12,21 +11,46 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## ⚡ Kenmerken
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Dit project is gemaakt met NodeJS, EJS, CSS en Socket.io. Verder staat hieronder nog een korte lijst emt gebruikte tools en middelen.
 
-## Installatie
+**Tools**
 
-## Gebruik
+- 🖥️ VSCode
+- ✍ Pen & Papier
 
-## Bronnen
+**Gebruikte technieken**
 
-## Licentie
+- 📟 NodeJS
+- 🚀 EJS
+- 💅 CSS
+- 🧰 Socket.io
+
+## 📥 Installatie
+
+1. Clone of download deze repository
+2. Ga naar de root directory van het project.
+3. Gebruik `npm install` om de gebruikte dev dependencies en packages te installeren.
+4. Gebruik `node app.js` om de web-server te starten. Deze is standaard bereikbar op poort `4242`.
+
+## 🔨 Gebruik
+
+De applicatie is op twee manieren te gebruiken: lokaal en op het web. Als je ervoor kiest om de web versie te gebruiken is het daadwerkelijk mogelijk om met meerdere ge bruikers tegelijk te chatten, dit gebeurd al als twee gebruikers op hetzelfde moment de chat bezoeken. De webversie is te bereiken via onderstaande link:
+
+[Webversie](https://first-chatroom.herokuapp.com/)
+
+## 📖 Bronnen
+
+[NodeJS](https://nodejs.dev/)
+<br>
+[EJS](https://ejs.co/)
+<br>
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+<br>
+[Socket.io](https://socket.io/)
+
+## 🔓 Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
