@@ -15,7 +15,7 @@ Dit project omvat een basis chatapplicatie waarin een gebruiker met andere gebru
 
 ## ⚡ Kenmerken
 
-Dit project is gemaakt met NodeJS, EJS, CSS en Socket.io. Verder staat hieronder nog een korte lijst emt gebruikte tools en middelen.
+Dit project is gemaakt met NodeJS, EJS, CSS en Socket.io. Verder staat hieronder nog een korte lijst met gebruikte tools en middelen.
 
 **Tools**
 
