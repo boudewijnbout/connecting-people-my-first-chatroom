@@ -38,7 +38,7 @@ Dit project is gemaakt met NodeJS, EJS, CSS en Socket.io. Verder staat hieronder
 
 ## 🔨 Gebruik
 
-De applicatie is op twee manieren te gebruiken: lokaal en op het web. Als je ervoor kiest om de web versie te gebruiken is het daadwerkelijk mogelijk om met meerdere ge bruikers tegelijk te chatten, dit gebeurd al als twee gebruikers op hetzelfde moment de chat bezoeken. De webversie is te bereiken via onderstaande link:
+De applicatie is op twee manieren te gebruiken: lokaal en op het web. Als je ervoor kiest om de web versie te gebruiken is het daadwerkelijk mogelijk om met meerdere gebruikers tegelijk te chatten, dit gebeurt al als twee gebruikers op hetzelfde moment de chat bezoeken. De webversie is te bereiken via onderstaande link:
 
 [Webversie](https://first-chatroom.herokuapp.com/)
 
